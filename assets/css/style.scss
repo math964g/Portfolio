@@ -1,54 +1,79 @@
+$background-color: #4d4e4f;
+$primary-color: #65fff5;
+
 @import "_reset.scss";
 
-// nav {
-//   z-index: 5;
-//   position: sticky;
-//   top: 0;
-//   display: flex;
-//   overflow: hidden;
-//   background-color: #4d4e4f;
-//   border-top: 4px solid #8ACED7;
-// }
-//
-// ul {
-//   width: 100%;
-//   list-style-type: none;
-//   display: flex;
-//   flex-direction: row;
-//   justify-content: center;
-// }
-//
-// li a {
-//   display: block;
-//   color: white;
-//   text-align: center;
-//   padding: 20px 28px;
-//   text-decoration: none;
-//   font-weight: bold;
-//   font-size: 24px;
-//   border-bottom: 4px solid #4d4e4f;
-// }
-//
-// li a:hover:not(.active) {
-//   border-bottom: 4px solid #8ACED7;
-// }
-//
+nav {
+  background-color: $background-color;
+    position: sticky;
+    top: 0;
+    border-top: 4px solid #8ACED7;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 0px;
+  }
+
+  a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 4px solid $background-color;
+    transition: all 250ms;
+  }
+
+  a:hover:not(.active) {
+    border-bottom: 4px solid $primary-color;
+  }
+}
+
+h2 {
+  padding-top: 80px;
+}
+
 // .active {
 //   background-color: #4CAF50;
 // }
-//
-// .welcome-screen {
-//   z-index: -5;
-//   height: 100vh;
-//   background-color: #535455;
-// }
-//
-// .delete {
-//   position: fixed;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
+
+.parallax {
+  background-image: url("https://w.wallhaven.cc/full/0p/wallhaven-0pewvj.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.projects-container {
+  margin: 5vh 15vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #2196F3;
+
+  &> div {
+    text-align: center;
+    border-style: dashed;
+    border-width: 1px;
+    min-height: (70vw / 3);
+  }
+}
+
+// .item {
+//    background-color: red;
+//    position: relative;
+//  }
+
+
+
+
+
 //
 // .project-page {
 //   background-color: #222;
