@@ -10,7 +10,7 @@ for (var i = 0; i < hb.length; i++) {
 function showText() {
   console.log("showing text");
   console.log(this);
-  this.style.fontSize = "32px";
+  this.style.fontSize = "52px";
 }
 
 function hideText() {
@@ -66,7 +66,7 @@ function glitchEffect() {
       // Controls the range of displacement
       glitch[i].style.backgroundPosition = 0 + "px";
     }
-  }, 150)
+  }, Math.floor(Math.random() * (150 - 50 + 1) ) + 50)
 
 
 glitchTimer();
