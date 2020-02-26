@@ -10,6 +10,8 @@
   text-decoration: none; }
 
 nav {
+  position: absolute;
+  z-index: 5;
   background-color: #4d4e4f;
   position: sticky;
   top: 0;
@@ -18,7 +20,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0px 0px; }
+    padding: 0; }
   nav a {
     display: block;
     color: white;
@@ -32,9 +34,6 @@ nav {
   nav a:hover:not(.active) {
     border-bottom: 4px solid #65fff5; }
 
-h2 {
-  padding-top: 80px; }
-
 .parallax {
   background-image: url("https://w.wallhaven.cc/full/0p/wallhaven-0pewvj.jpg");
   height: 100vh;
@@ -43,16 +42,31 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.projects-container {
+.projects > h2 {
+  position: relative;
+  font-size: 50px;
+  padding-top: 80px;
+  text-align: center; }
+.projects .projects-container {
   margin: 5vh 15vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  background-color: #2196F3; }
-  .projects-container > div {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr; }
+  .projects .projects-container > div {
     text-align: center;
-    border-style: dashed;
-    border-width: 1px;
-    min-height: 23.3333333333vw; }
-
-/*# sourceMappingURL=style.css.map */
+    min-height: 35vw; }
+  .projects .projects-container .description {
+    position: relative;
+    width: 70%;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%); }
+  .projects .projects-container .multikey {
+    color: white;
+    background-image: url(../img/multikeylogo.svg);
+    background-repeat: no-repeat;
+    background-color: #0b0e17; }
+  .projects .projects-container .oneaday {
+    background-color: orange; }
+  .projects .projects-container .hygge {
+    background-color: green; }

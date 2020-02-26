@@ -1,19 +1,20 @@
 $background-color: #4d4e4f;
 $primary-color: #65fff5;
-
 @import "_reset.scss";
 
 nav {
+  position: absolute;
+  z-index: 5;
   background-color: $background-color;
-    position: sticky;
-    top: 0;
-    border-top: 4px solid #8ACED7;
+  position: sticky;
+  top: 0;
+  border-top: 4px solid #8ACED7;
 
   ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 0px 0px;
+    padding: 0;
   }
 
   a {
@@ -33,10 +34,6 @@ nav {
   }
 }
 
-h2 {
-  padding-top: 80px;
-}
-
 // .active {
 //   background-color: #4CAF50;
 // }
@@ -50,30 +47,54 @@ h2 {
   background-size: cover;
 }
 
-.projects-container {
-  margin: 5vh 15vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  background-color: #2196F3;
+.projects {
 
-  &> div {
+  & > h2 {
+    position: relative;
+    font-size: 50px;
+    padding-top: 80px;
     text-align: center;
-    border-style: dashed;
-    border-width: 1px;
-    min-height: (70vw / 3);
+  }
+
+  .projects-container {
+    margin: 5vh 15vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    & > div {
+      text-align: center;
+      min-height: (70vw / 2);
+    }
+
+    .description {
+      position: relative;
+      width: 70%;
+      top: 75%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .multikey {
+      color: white;
+      background-image: url(../img/multikeylogo.svg);
+      background-repeat: no-repeat;
+      background-color: #0b0e17;
+    }
+
+    .oneaday {
+      background-color: orange;
+    }
+
+    .hygge {
+      background-color: green;
+    }
   }
 }
-
 // .item {
 //    background-color: red;
 //    position: relative;
 //  }
-
-
-
-
-
 //
 // .project-page {
 //   background-color: #222;
