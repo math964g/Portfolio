@@ -35,7 +35,7 @@ nav {
     border-bottom: 4px solid #65fff5; }
 
 .parallax {
-  background-image: url("https://w.wallhaven.cc/full/0p/wallhaven-0pewvj.jpg");
+  background-image: url(../img/parallax-bg-2.jpg);
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -54,19 +54,28 @@ nav {
   grid-template-rows: 1fr; }
   .projects .projects-container > div {
     text-align: center;
-    min-height: 35vw; }
-  .projects .projects-container .description {
-    position: relative;
-    width: 70%;
-    top: 75%;
-    left: 50%;
-    transform: translateX(-50%); }
+    min-height: 35vw;
+    font-size: 0;
+    color: white; }
+  .projects .projects-container > div:hover:before {
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); }
   .projects .projects-container .multikey {
-    color: white;
     background-image: url(../img/multikeylogo.svg);
     background-repeat: no-repeat;
-    background-color: #0b0e17; }
+    background-color: #0b0e17;
+    filter: contrast(120%); }
+  .projects .projects-container h3 {
+    position: relative;
+    top: 50%; }
   .projects .projects-container .oneaday {
-    background-color: orange; }
-  .projects .projects-container .hygge {
-    background-color: green; }
+    background-image: url(../img/oneadaylogo.svg);
+    background-repeat: no-repeat;
+    background-color: black;
+    filter: contrast(120%); }
