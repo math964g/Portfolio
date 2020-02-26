@@ -1,4 +1,4 @@
-$background-color: #4d4e4f;
+$background-color: #19191a;
 $primary-color: #65fff5;
 @import "_reset.scss";
 
@@ -8,7 +8,7 @@ nav {
   background-color: $background-color;
   position: sticky;
   top: 0;
-  border-top: 4px solid #8ACED7;
+  border-top: 4px solid $primary-color;
 
   ul {
     display: flex;

@@ -12,10 +12,10 @@
 nav {
   position: absolute;
   z-index: 5;
-  background-color: #4d4e4f;
+  background-color: #19191a;
   position: sticky;
   top: 0;
-  border-top: 4px solid #8ACED7; }
+  border-top: 4px solid #65fff5; }
   nav ul {
     display: flex;
     flex-direction: row;
@@ -29,7 +29,7 @@ nav {
     text-decoration: none;
     font-weight: bold;
     font-size: 24px;
-    border-bottom: 4px solid #4d4e4f;
+    border-bottom: 4px solid #19191a;
     transition: all 250ms; }
   nav a:hover:not(.active) {
     border-bottom: 4px solid #65fff5; }
