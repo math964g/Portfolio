@@ -24,7 +24,6 @@ nav {
 
   a {
     display: block;
-    color: white;
     text-align: center;
     padding: 12px 28px;
     text-decoration: none;
@@ -143,11 +142,12 @@ nav {
 }
 
 .projects {
+  height: 100vh;
 
   & > h2 {
     position: relative;
     font-size: 50px;
-    padding-top: 80px;
+    padding-top: 15vh;
     text-align: center;
   }
 
@@ -159,9 +159,8 @@ nav {
 
     & > div {
       text-align: center;
-      min-height: (70vw / 2);
+      min-height: (70vw / 3);
       font-size: 0;
-      color: white;
     }
 
     // Applies the black filter when hovering an item - Doesn't affect the text inside
@@ -182,6 +181,12 @@ nav {
     //   transform: translateX(-50%);
     // }
 
+    h3 {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
     .multikey {
       background-image: url(../img/multikeylogo.svg);
       background-repeat: no-repeat;
@@ -189,22 +194,17 @@ nav {
       filter: contrast(120%);
     }
 
-    h3 {
-      position: relative;
-      top: 50%;
-    }
-
     .oneaday {
       background-image: url(../img/oneadaylogo.svg);
       background-repeat: no-repeat;
-      background-color: black;
+      background-color: #000;
       filter: contrast(120%);
     }
 
     .amigo {
-      background-image: url(../img/oneadaylogo.svg);
+      background-image: url(../img/amigo.svg);
       background-repeat: no-repeat;
-      background-color: black;
+      background-color: #fff;
       filter: contrast(120%);
     }
   }

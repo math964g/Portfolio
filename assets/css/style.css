@@ -39,7 +39,6 @@ nav {
     padding: 0; }
   nav a {
     display: block;
-    color: white;
     text-align: center;
     padding: 12px 28px;
     text-decoration: none;
@@ -115,47 +114,49 @@ nav {
     box-shadow: 0 0 20px 10px #2FF928; }
   100% {
     box-shadow: 0 0 10px 5px #2FF928; } }
-.projects > h2 {
-  position: relative;
-  font-size: 50px;
-  padding-top: 80px;
-  text-align: center; }
-.projects .projects-container {
-  margin: 5vh 15vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr; }
-  .projects .projects-container > div {
-    text-align: center;
-    min-height: 35vw;
-    font-size: 0;
-    color: white; }
-  .projects .projects-container > div:hover:before {
-    cursor: pointer;
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.8); }
-  .projects .projects-container .multikey {
-    background-image: url(../img/multikeylogo.svg);
-    background-repeat: no-repeat;
-    background-color: #0b0e17;
-    filter: contrast(120%); }
-  .projects .projects-container h3 {
+.projects {
+  height: 100vh; }
+  .projects > h2 {
     position: relative;
-    top: 50%; }
-  .projects .projects-container .oneaday {
-    background-image: url(../img/oneadaylogo.svg);
-    background-repeat: no-repeat;
-    background-color: black;
-    filter: contrast(120%); }
-  .projects .projects-container .amigo {
-    background-image: url(../img/oneadaylogo.svg);
-    background-repeat: no-repeat;
-    background-color: black;
-    filter: contrast(120%); }
+    font-size: 50px;
+    padding-top: 15vh;
+    text-align: center; }
+  .projects .projects-container {
+    margin: 5vh 15vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; }
+    .projects .projects-container > div {
+      text-align: center;
+      min-height: 23.3333333333vw;
+      font-size: 0; }
+    .projects .projects-container > div:hover:before {
+      cursor: pointer;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8); }
+    .projects .projects-container h3 {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%); }
+    .projects .projects-container .multikey {
+      background-image: url(../img/multikeylogo.svg);
+      background-repeat: no-repeat;
+      background-color: #0b0e17;
+      filter: contrast(120%); }
+    .projects .projects-container .oneaday {
+      background-image: url(../img/oneadaylogo.svg);
+      background-repeat: no-repeat;
+      background-color: #000;
+      filter: contrast(120%); }
+    .projects .projects-container .amigo {
+      background-image: url(../img/amigo.svg);
+      background-repeat: no-repeat;
+      background-color: #fff;
+      filter: contrast(120%); }
 
 /*# sourceMappingURL=style.css.map */
