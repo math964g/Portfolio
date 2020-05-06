@@ -49,6 +49,25 @@ nav {
   nav a:hover:not(.active) {
     border-bottom: 4px solid #65fff5; }
 
+.some_container {
+  z-index: 10;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 140px; }
+  .some_container .some_icon {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 0 10px 10px 0; }
+  .some_container #linkedin {
+    background-image: url(../img/linkedin.svg); }
+  .some_container #github {
+    background-image: url(../img/github.svg); }
+
 #overview {
   width: 100%;
   height: 100vh; }
@@ -158,5 +177,3 @@ nav {
       background-repeat: no-repeat;
       background-color: #fff;
       filter: contrast(120%); }
-
-/*# sourceMappingURL=style.css.map */
