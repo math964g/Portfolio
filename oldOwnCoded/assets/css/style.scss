@@ -87,8 +87,8 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60%;
-    height: 40%;
+    width: 80vw;
+    height: 40vh;
 
     a {
 
@@ -96,12 +96,12 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 250px;
-        height: 250px;
+        width: 15vw;
+        height: 15vw;
         border-style: outset;
         border-width: 20px;
         // Font controls
-        font-size: 36px;
+        font-size: 32px;
       }
 
       & > #projectBox:hover {
@@ -234,4 +234,15 @@ nav {
       filter: contrast(120%);
     }
   }
+}
+
+.projectDetails {
+  position: fixed;
+  top: 5%;
+  z-index: 15;
+  width: 95vw;
+  height: 95vh;
+  background: blue;
+  border-style: solid;
+  border-width: 5px;
 }

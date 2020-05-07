@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1300px) {
+  body {
+    background-color: lightblue; }
+
+  h1 {
+    top: 5% !important;
+    font-size: 36px !important; }
+
+  .selection_box {
+    flex-direction: column !important;
+    height: 80vh !important; }
+    .selection_box a div {
+      width: 20vw !important;
+      height: 20vw !important;
+      border-width: 10px !important;
+      font-size: 24px !important; } }
