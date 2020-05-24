@@ -10002,6 +10002,10 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 
+.fullpage {
+  height: 100vh;
+}
+
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem
