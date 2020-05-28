@@ -77,19 +77,19 @@ a:active {
   color: #FFF;
 }
 
-p>a:link {
+.bluelinks:link {
   color: #0000FF;
 }
 
-p>a:visited {
+.bluelinks:visited {
   color: #0000FF;
 }
 
-p>a:hover {
+.bluelinks:hover {
   color: #0000FF;
 }
 
-p>a:active {
+.bluelinks:active {
   color: #0000FF;
 }
 
