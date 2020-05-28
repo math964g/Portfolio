@@ -77,6 +77,22 @@ a:active {
   color: #FFF;
 }
 
+p>a:link {
+  color: #0000FF;
+}
+
+p>a:visited {
+  color: #0000FF;
+}
+
+p>a:hover {
+  color: #0000FF;
+}
+
+p>a:active {
+  color: #0000FF;
+}
+
 .selection_box {
   display: flex;
   flex-direction: row;
